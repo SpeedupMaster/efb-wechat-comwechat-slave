@@ -741,7 +741,7 @@ class ComWeChatChannel(SlaveChannel):
                 res = self.send_text(wxid = chat_uid , msg = msg)
         elif msg.type in [MsgType.Link]:
             self.send_text(wxid = chat_uid , msg = msg)
-        elif msg.type in [MsgType.Image]:
+        elif msg.type in [MsgType.Image , MsgType.Sticker]:
             name = os.path.basename(msg.file.name)
             local_path =f"{self.dir}{self.wxid}/{name}"
             load_temp_file_to_local(msg.file, local_path)
