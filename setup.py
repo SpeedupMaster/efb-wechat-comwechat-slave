@@ -28,6 +28,7 @@ setup(
         "requests",
         "qrcode",
         "pyzbar",
+        "libzbar0",
         "rich",
         "pyqrcode",
         "python-magic",
